@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>23테이블스타일.html</title>
+	<style type="text/css">
+
+		table {
+			width:80%;
+			height:400;
+			border-top:3px solid;
+			border-bottom:1px solid;
+			border-collapse: collapse;
+			/* 테이블(셀) 구분선의 분리여부를 지정 */
+		}
+		table tr {
+			/* border-width:1px; */
+			border:1px solid black;
+			/* 테이블(셀) 구분선의 분리여부를 지정 */
+		}
+		table th {
+			background-color:#cc66ff;
+			color:white;
+			border-bottom:2px solid silver;
+			font-size:1.4em;
+		}
+		table td {
+			border-bottom:1px dotted;
+		}
+		table tr:hover {
+			background-color:silver;
+			cursor : pointer;
+		}
+		
+		/* tbody 자식 tr에만 배경색을 주세요: yellow */
+		table> tbody {
+			background-color:yellow;
+		}
+		tbody> tr:nth-child(even) {
+			background-color:green;
+		}
+		/* 
+		// mouseover 속성이 사라짐 : even, odd 같이 쓰면 
+		tbody> tr:nth-child(odd) {
+			background-color:blue;
+		}
+		tbody> tr:nth-of-type(odd) {
+			background-color:rgb(214,158,20);
+		}
+		*/
+		caption {
+			caption-side:bottom left;
+			font-size:2em;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<!-- 5행 3열 -->
+	<table>
+	<caption>학교정보</caption>
+	<thead>
+		<tr>
+			<th>설립년도</th>
+			<th>학교명</th>
+			<th>주소</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1998</td>
+			<td>소망초등학교</td>
+			<td>서울 마포구 합정동 111</td>
+		</tr>
+		<tr>
+			<td>1995</td>
+			<td>희망초등학교</td>
+			<td>서울 영등포구 당산동 22</td>
+		</tr>
+		<tr>
+			<td>1982</td>
+			<td>경희초등학교</td>
+			<td>서울 성북구 정릉동 44</td>
+		</tr>
+		<tr>
+			<td>1998</td>
+			<td>목동초등학교</td>
+			<td>서울 강서구 목동 77</td>
+		</tr>
+	</tbody>
+	</table>
+	
+</body>
+</html>

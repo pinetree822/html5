@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>19계층선택자.html</title>
+	<style type="text/css" rel="stylesheet" href=""></style>
+	<style type="text/css">
+		#id1 {
+			border : dashed red;
+		}
+		#id1 span {
+			color : deeppink;
+		}
+		#id1> span {
+			color : blue;
+			background-color : green;
+		}
+		.class1 {
+			border : dotted blue;
+			color : purple;
+		}
+		.class1>li {
+			color : red;
+		}
+		.class1~li {
+			color : orange;
+		}
+		.class1>li:befor {
+			color : black;
+		}
+		/* class1 : 테두리 dotted blue, 글자색 : purple
+		*/
+		/*	class1의 자손중 h4를 선택해서 글자색 : red
+			class1의 자식중 h3를 선택해서 글자색 : orange
+		*/
+		.class1 h4 {
+			color:red;
+		}
+		.class1 h3 {
+			color:orange;
+		}
+		/* 형제 선택자 */
+		h3 + h4 {
+			text-align : center; /* 텍스트의 수평정렬 : 중앙 */
+		}
+
+		h3 ~ h4 {
+			background-color: #d3d3a1;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="id1">
+		div 스타일1
+		<span>span스타일1</span>
+		<span>span스타일1</span>
+		<p>
+			p스타일1
+			<span>span스타일3</span>
+		</p>
+		<ul class="class1">
+			<li>하늘</li>
+			<li>바다</li>
+		</ul>
+	</div>
+	<span>span스타일0</span>
+	<div id="id2">
+		<h3>전나무<h3>
+		<h4>소나무<h4>
+		<h5>밤나무<h5>
+		<h5>감나무<h5>
+		<h4>느티나무<h4>
+	</div>
+</body>
+</html>

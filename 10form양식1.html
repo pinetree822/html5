@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>09form양식1.html</title>
+	<style>	
+		.headCaption {
+			background-color:#FEFF99;
+			text-align:right;
+		}
+	</style>
+</head>
+<body>
+
+	<form action="memberJoin.jsp" method="post">
+	<table>
+	<tr bgColor="#AABBCB">
+		<td colspan="2">☞아이디(ID)정보</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 아이디</td>
+		<td>
+			<p>
+				<input type="text" name="userId" size="15"></input>
+				<input type="button" value="중복검사"></button>
+			</p>
+			<span>(4~12자 영자/숫자 가능,한글,특수문자ID는 사용할 수 없습니다.)</span>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 비밀번호</td>
+		<td>
+			<p>
+				<input type="text" name="pass1" size="15"></input>(4~8자 이내로 만들어 주세요.)
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 비밀번호 확인</td>
+		<td>
+			<p>
+				<input type="text" name="pass2" size="15"></input>(위 번호와 같이 입력해 주세요.)
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 본인확인 질문</td>
+		<td>
+			<select name="iquestion">
+				<option value="" selected="true">질문을 선택하세요.</option>
+				<option value="">내가 태어난 달은?</option>
+				<option value="">내가 태어난 고향은?</option>
+				<option value="">나의 첫사랑은?</option>
+				<option value="">원수같은 넘은?</option>
+			</select>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 본인확인 답</td>
+		<td>
+			<p><input type="text" name="ianswer" size="15"></input>(비밀번호 분실,변경시 본인확인을 위한 정보)</p>
+		</td>
+	</tr>
+	<tr bgColor="#66CBFF">
+		<td colspan="2">☞개인정보</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 이름(한글)</td>
+		<td>
+			<p><input type="text" name="userName" size="15"></input>(예:박정현)</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">성별</td>
+		<td><p>
+				<input type="radio" name="gender" value="M" checked="true">남자</input>
+				<input type="radio" name="gender" value="F">여자</input>		
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">생년월일</td>
+		<td>
+			<p>
+				<input type="text" name="year" size="4">년</input>
+				<select name="month">
+					<option value="">선택</option>
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+					<option value="">6</option>
+					<option value="">7</option>
+					<option value="">8</option>
+					<option value="">9</option>
+					<option value="">10</option>
+					<option value="">11</option>
+					<option value="">12</option>
+				</select>월
+				<select name="day">
+					<option value="" selected="true">선택</option>
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+					<option value="">6</option>
+					<option value="">7</option>
+					<option value="">8</option>
+					<option value="">9</option>
+					<option value="">10</option>
+					<option value="">11</option>
+					<option value="">12</option>
+					<option value="">13</option>
+					<option value="">14</option>
+					<option value="">15</option>
+					<option value="">16</option>
+					<option value="">17</option>
+					<option value="">18</option>
+					<option value="">19</option>
+					<option value="">20</option>
+					<option value="">21</option>
+					<option value="">22</option>
+					<option value="">23</option>
+					<option value="">24</option>
+					<option value="">25</option>
+					<option value="">26</option>
+					<option value="">27</option>
+					<option value="">28</option>
+					<option value="">29</option>
+					<option value="">30</option>
+					<option value="">31</option>
+				</select>일
+				<input type="radio" name="lunar" value="1">음력</input>
+				<input type="radio" name="lunar" value="0" checked="true">양력</input>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 주소</td>
+		<td>
+			<p>
+				<input type="text" name="post" size="15"></input>
+				<input type="button" value="우편번호 찾기"></button>
+			</p>
+			<p><input type="text" name="juso1" size="35"></input></p>
+		
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 전화번호</td>
+		<td>
+			<p>
+				핸드폰
+				<input type="text" name="hphone1" size="4"></input>-
+				<input type="text" name="hphone2" size="4"></input>-
+				<input type="text" name="hphone3" size="4"></input>
+				<input type="radio" name="hphonetype" value="1">SKT</input>
+				<input type="radio" name="hphonetype" value="2">KTF</input>
+				<input type="radio" name="hphonetype" value="3">LGT</input>
+			</p>
+			<p>
+				집/회사
+				<input type="text" name="ophone1" size="4"></input>-
+				<input type="text" name="ophone2" size="4"></input>-
+				<input type="text" name="ophone3" size="4"></input>
+				최소 한개는 입력하세요.
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">* 직업</td>
+		<td>
+			<p>
+				직업 : 
+				<select name="job">
+					<option value="sales" selected="true">직업을 선택하세요.</option>
+					<option value="sales">SALES</option>
+					<option value="manager">MANAGER</option>
+					<option value="clert">CLERT</option>
+					<option value="other">기타</option>
+				</select>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">이메일</td>
+		<td>
+			<p><input type="text" name="userEmail" size="45"></input></p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">메일수신</td>
+		<td>
+			<p>
+				<input type="radio" name="emailSend" value="1">받습니다.</input>
+				<input type="radio" name="emailSend" value="0" checked="true">받지않습니다.</input>
+				다양하고 유익한 정보, 메일로 받아보세요.
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">SMS수신</td>
+		<td>
+			<p>
+				<input type="radio" name="smsSend" value="1">받습니다.</input>
+				<input type="radio" name="smsSend" value="0" checked="true">받지않습니다.</input>
+			</p>
+		</td>
+	</tr>
+	<tr>
+		<td class="headCaption">가입인사</td>
+		<td>
+			<p>
+				<textarea name="comment" rows="5" cols="40"></textarea>
+			</p>
+		</td>
+	</tr>
+	<tr align="center">
+		<td colspan="2"><input type="submit" value="확인"></button> <input type="reset" value="다시입력"></td>
+	</tr>
+	</table>
+	</form>
+
+
+
+</body>
+</html>

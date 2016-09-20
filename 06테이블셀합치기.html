@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>06테이블셀합치기.html</title>
+</head>
+<body>
+
+	<Table border="1" width="90%" height="150" align="center">
+	<CAPTION></CAPTION>
+	<TR bgcolor="yellow"><!-- tr:행. table row -->
+		<TH colspan="3">표1-1 우리반 연락처</TH><!-- th:제목열. table col -->
+	</TR>
+	<TR bgcolor="yellow"><!-- tr:행. table row -->
+		<TH>번호</TH><!-- th:제목열. table col -->
+		<TH>이름</TH>
+		<TH>연락처</TH>
+	</TR>
+	<TR align="center">
+		<TD rowspan="2" bgcolor="skyblue">1</TD><!-- td:일반열. table col -->
+		<TD bgcolor="pink">홍길동</TD>
+		<TD bgcolor="#33ffff">000-0000-00001</TD>
+	</TR>
+	<TR align="center">
+		<TD bgcolor="pink">고길동</TD>
+		<TD bgcolor="#33ffff">000-0000-00002</TD>
+	</TR>
+	<TR align="center">
+		<TD bgcolor="skyblue" align="right">3</TD><!-- td:일반열. table col -->
+		<TD bgcolor="pink" align="center">오말자</TD>
+		<TD bgcolor="#33ffff">000-0000-00003</TD>
+	</TR>
+	<TR style="background-image: url(./images/beach.jpg)" align="center">
+		<TD>4</TD><!-- td:일반열. table col -->
+		<TD>superman</TD>
+		<TD>000-0000-00004</TD>
+	</TR>	
+	</Table>
+
+
+	<br/>
+
+
+
+	<Table border="1" width="90%" height="150" align="center">
+	<CAPTION>첫번째표</CAPTION>
+	<TR bgcolor="yellow"><!-- tr:행. table row -->
+		<TH rowspan="2">이름</TH><!-- th:제목열. table col -->
+		<TH colspan="2">전화번호</TH>
+		<TH rowspan="2">주소</TH>
+	</TR>
+	<TR bgcolor="yellow"><!-- tr:행. table row -->
+		<TH>전화번호</TH>
+		<TH>호출기</TH>
+	</TR>
+	<TR align="center">
+		<TD bgcolor="pink">홍길동</TD>
+		<TD bgcolor="#33ffff">(017)0000-00001</TD>
+		<TD bgcolor="#3377ff"></TD>
+		<TD bgcolor="#3399ff">서울시 관악구 신림동</TD>
+	</TR>
+	<TR align="center">
+		<TD bgcolor="pink">고길동</TD>
+		<TD bgcolor="#33ffff">(010)0000-00002</TD>
+		<TD bgcolor="#3377ff"></TD>
+		<TD bgcolor="#3399ff">경상남도 부산시 해운구 해운동</TD>
+	</TR>
+	<TR align="center">
+		<TD bgcolor="pink" align="center">오말자</TD>
+		<TD bgcolor="#33ffff">(070)0000-00003</TD>
+		<TD bgcolor="#3377ff">(012)3333-4444</TD>
+		<TD bgcolor="#3399ff">제주 제주시 오정동</TD>
+	</TR>
+	<TR style="background-image: url(./images/beach.jpg)" align="center">
+		<TD>superman</TD>
+		<TD>(000)0000-0004</TD>
+		<TD></TD>
+		<TD>크립토스 행성</TD>
+	</TR>	
+	</Table>
+
+
+
+</body>
+</html>

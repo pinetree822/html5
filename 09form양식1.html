@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>09form양식1.html</title>
+</head>
+<body>
+
+	<form action="memberJoin.jsp" method="GET">
+	<!-- form 태그 : 서버에 데이터를 전송하고자 할 때
+	입력양식을 form태그로 감싼다.
+
+	method 속성 : 데이터 전송방식
+		값으로는 GET 아니면 POST값을 기술
+		GET방식은 데이타가 URL에 노출
+		POST방식은 데이터를 감춰서 전송
+
+	action 속성 : 폼 양식을 처리하는 서버페이지를 기술
+	enctype 속성 : 인코딩 방식 기술
+		파일업로드시는 multipart/form-data를 지정
+	-->
+		<p>이름 : <input type="text" name="userName"></input></p>
+		<p>아이디 : <input type="text" name="userId"></input></p>
+		<p>비밀번호 : <input type="password" name="pwd"></input></p>
+		<p>
+			성별(라디오 버튼 - 다중 선택) : 
+			<input type="radio" name="gender" value="M">남자</input>
+			<input type="radio" name="gender" value="F" checked="true">여자</input>
+		</p>
+		<p>
+			취미(체크 박스 - 다중 선택) : 
+			<input type="checkbox" name="hobby" value="reading">독서</input>
+			<input type="checkbox" name="hobby" value="movie">영화감상</input>
+			<input type="checkbox" name="hobby" value="music">음악감사</input>
+			<input type="checkbox" name="hobby" value="sport">스포츠</input>
+			<input type="checkbox" name="hobby" value="other" checked="true">기타</input>
+		</p>
+		<p>
+			직업(드롭다운 리스트 - 단일 선택) : 
+			<select name="job">
+				<option value="sales">SALES</option>
+				<option value="manager">MANAGER</option>
+				<option value="clert">CLERT</option>
+				<option value="other" selected="true">기타</option>
+			</select>
+		</p>
+		<p>
+			직업(리스트 박스 - 단일 선택) : 
+			<select name="lang" size="4" multiple="true">
+				<option value="JAVA">JAVA</option>
+				<option value="HTML">HTML</option>
+				<option value="CSS">CSS</option>
+				<option value="JSP">JSP</option>
+				<option value="other" selected="true">기타</option>
+			</select>
+		</p>
+		<p>
+			건의 사항 :
+			<textarea name="comment" rows="5" cols="40"></textarea>
+		</p>
+		<p>
+			히든필드(데이터를 숨겨 보내고자 할 때)
+			<input type="hidden" name="mydata" value="Top Secret"></input>
+		</p>
+		<p>
+			파일업로드 <input type="file" name="photo"></input>
+		</p>
+
+
+		<input type="submit" value="회원가입"></input><!-- 전송버튼 -->
+		<input type="reset" value="다시쓰기"></input><!-- 리셋버튼 -->
+		<input type="reset" value="일반버튼" onclick="alert('안녕?');return false;"></input>
+		<!-- button : 특별한 기능 없음
+			기능을 수행하려면 자바스크립트로 이벤트 핸들러로 지정
+
+			input type이 image는 submit 기능이 있다.
+
+		 -->
+
+		 
+		<p>
+			<img src="./images/view.PNG">
+			<img src="./images/view.PNG" onclick="alert('안녕?');return false;">
+			<a href="javascript:alert('하이');" ><img src="./images/view.PNG"></a>
+		</p>
+		 
+		<p>
+			<input type="image" src="./images/view.PNG"></input>
+		</p>
+		 
+		<p>
+			<input type="image" src="./images/view.PNG" onclick="alert('안녕?');return false;"></input>
+		</p>
+	</form>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>26이미지관련스타일.html</title>
+	<style type="text/css">
+		img {
+			float:right;
+			/*float:left;*/
+		}
+		#a {
+			clear:both;
+		}
+	</style>
+	<script></script>
+</head>
+<body>
+	<img src="images/c.jpg" />: 스타일 시트를 이용해서
+	이미지 옆에 텍스트를 배치하고자 할 때 사용하는 속성:float
+	float속성은 하나의 라인에 이미지와 글씨가 함께 있을때
+	이미지를 왼쪽이나 오른쪽에 배치하고, 나머지 글씨들이
+	이미지 주변에 흐르도록 하는 속성
+	이미지 뿐 아니라 모든 black요소에 대하 float속성을
+	사용할 수 있으며, 속성값으로는 none,left,right
+	를 사용할 수 있다.
+	<hr color="red" />
+	<hr color="blue" style="clear:both"/>
+	<!--
+	<hr color="blue" style="clear:left"/>
+	<hr color="blue" style="clear:right"/>
+	-->
+	<img src="images/e.jpg" /> 이미지 옆에 텍스트의 배치를
+	<div id="a">
+		해체하고자 할 때 사용하는 속성:clear
+		clear는 취소한다는 의미로 속성값으로는
+		left, none, right, both가 오며, float:left를 취소하고자
+		하면 clear:lef, float:right를 취소하려면
+		clear:right를, 둘다 취소하려면 clear:both를
+		사용한다.
+	</div>
+</body>
+</html>

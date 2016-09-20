@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>21배경관련스타일.html</title>
+	<style type="text/css">
+		span {
+			font-size : 20pt;
+		}
+		span.skyblue {
+			background-color : skyblue;
+		}
+		.deeppink {
+			background-color : deeppink;
+		}
+		/* 배경 이미지 */
+		td {
+			background-image:url("images/login.png");
+		}
+		td#x {
+			background-repeat:repeat-x;
+		}
+		td#y {
+			background-repeat:repeat-y;
+		}
+		td#z {
+			background-repeat:no-repeat;
+			background-position: center center;
+			/* 이미지 위치 : background-position
+			속성은 background-repeat 속성값이
+			no-repeat일 때만 적용된다.
+
+			수평방향 : left, center, right;
+			수직방향 : top, center, bottom
+			*/
+		}
+		TD.a,TD.b,TD.c,TD.d {
+			background-repeat:no-repeat;
+		}
+		TD.a {
+			background-position: left top;
+		}
+		TD.b {
+			background-position: right bottom;
+		}
+		TD.c {
+			/* background-position: 50% 50%; */
+			background-position: center;
+		}
+		TD.d {
+			background-position: 50px 50px;
+			background-size:150px 90px;
+		}
+
+		.ta {
+			font-size: 13pt;
+			font-family: 휴먼편지체, 궁서체;
+
+			background-repeat: no-repeat;
+			background-image:url("images/login.png");
+			background-position: center center;
+			background-size:150px 90px;
+			margin: 20px;
+			margin-top: 90px;
+			opacity:0.7;/* 투명도: 1에 가까움에 불투명 */
+		}
+
+		/* ta클래스에 대한 정의
+
+		글자크기 : 13pt, 서체: 휴먼편지체, 궁서체;
+		배경이미지 지정. 단 반복하지 않도록
+		바깥여백: 20px;
+		*/
+	</style>
+	<script></script>
+</head>
+<body>
+	<span class="skyblue">배경색 적용하기 1</span>
+	<span class="deeppink">배경색 적용하기 2</span>
+
+	<h1>배경에 이미지 적용하기</h1>
+	<!-- 2행4열의 테이블 -->
+	<table border="1" width="100%" height="400px">
+	<tr>
+		<td width="25%">repeat</td>
+		<td width="25%" id="x">repeat-x</td>
+		<td width="25%" id="y">repeat-y</td>
+		<td width="25%" id="z">no-repeat</td>
+	</tr>
+	<tr>
+		<td class="a">기본위치는 left, top</td>
+		<td class="b">right-bottom</td>
+		<td class="c">50% 50%</td>
+		<td class="d">50px 50px</td>
+	</tr>
+	</table>
+	<textarea class="ta" width="100px" height="200px"></textarea>
+</body>
+</html>

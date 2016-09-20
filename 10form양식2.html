@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>10form양식2.html</title>
+</head>
+<body>
+	<h1>HTML5에 추가된 폼 양식</h1>
+
+	<form action="index.jsp" method="GET">
+	<p>
+		<label for="uName">이름</label>
+		<input type="text" name="name" class="uName" placeholder="입력을 입력하세요." size="60px" required
+			style="border: 1px dotted blue"
+		></input>
+	</P>
+	<P>
+		<label for="UEmail">이메일</label>
+		<input type="email" name="email" class="uEmail" placeholder="입력을 입력하세요." size="60px"></input>
+	</P>
+	<P>
+		<label for="uHomepage">홈페이지</label>
+		<input type="url" name="homepage" class="uHomepage" placeholder="입력을 입력하세요." size="60px"></input>
+	</P>
+	<p>
+		<label for="uTel">전화</label>
+		<input type="tel" name="tel" class="uTel" placeholder="입력을 입력하세요." size="60px"></input>
+	</P>
+	<!--  tel형식은 email이나 url과는 달리 구문에
+	맞지 않는다고 에러 메시지를 출력하지 않는다.
+
+	다만, 모바일 기기에서 이 형식을 사용할 경우,
+	숫자 패드가 나타나 입력을 편하게 한다.
+	-->
+
+
+	<p>
+		<label for="uRange">범위</label>
+		<input type="range" name="range" class="uAge" size="60px" min="1" max="120" value="20"></input>
+	</P>
+	<p>
+		<label for="uDate">생년월일</label>
+		<input type="date" name="date" class="uDate"></input>
+	</P>
+	<p>
+		<label for="uTime">시분초</label>
+		<input type="time" name="time" class="uTime" size="60px"></input>
+	</P>
+	<p>
+		<label for="uAge">색상</label>
+		<input type="color" name="color" class="uColor"></input>
+	</P>
+	<p>
+		<label for="uSearch">나이</label>
+		<input type="search" name="search" class="uSearch" placeholder="검색어를 입력하세요."></input>
+	</P>
+	<P></P>
+		<input type="submit" value="전송버튼"></input>
+		<input type="reset" value="리셋버튼"></input>
+		<input type="button" value="일반버튼"></input>
+	</form>
+
+
+	<pre>
+	<hr color="red"/>
+	import java.lang.System;
+
+	class  Hello
+	{
+		public static void main(String[] args) 
+		{//main() 메소드의 시작 {}=>몸체
+			System.out.println("Hello World!");
+			System.out.println("Goood Day!");
+			System.out.println("bye!");
+		}//main() 메소드의 끝
+	}
+
+	</pre>
+
+	<hr color="red"/>
+
+	<xmp>
+		<hr color="red"/>
+		<h2>html소스를 브라우저에 구현하기</h2>
+		HTML시작하기<BR>
+		<b>HTML</b>
+		<H3>이건 제목3태그</H3>
+	</xmp>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>22글자스타일.html</title>
+
+	<!-- 웹폰트 참조방식 - link 참조 -->
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+	<style type="text/css">
+		/* 웹폰트 참조방식 - import문으로 참조 
+		https://fonts.google.com/earlyaccess
+		*/
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumbrushscript.css);
+		@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+		@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+		h1 {
+			font-family: 'Nanum Brush Script', cursive;
+		}
+		h2.myfnt1 {
+			font-family: 'Nanum Gothic', sans-serif;
+		}
+		h2.myfnt2 {
+			/*font-family: 'Noto Sans KR', sans-serif;*/
+			font-family: 'Baloo Tamma', cursive;
+		}
+		.txtfnt {
+			font-family:돋움;
+			font-size:3em;/* font-size:16px; */
+			/*
+			절대적 단위: px pt
+			상대적 단위: %, em
+				1em:16px크기에 해당
+				2em:32px크기에 해당
+			*/
+			font-style:normal;				/* normal, italic, oblique(보통 기울임) */
+			font-weight:lighter;			/* normal, bold, bolder, lighter */
+			color:rgb(50%, 55%, 55%);		/* color:rgb(150, 255, 255); */
+			color:rgba(50%, 55%, 55%, 0.5);	/* colora:rgb(150, 255, 255, 1); */
+											/* colora:rgb(red, green, blue, alpha); 
+												alpha : 0~1 투명도
+											*/
+		}
+
+		/* 아이디 fnt에 대해 font스타일 적용하세요. */
+		#fnt {
+			/* 
+			폰트체   : 바탕체, sans-serif
+			폰트색깔 : color - 0,255,0, alpha - 0.7
+			폰트크기 : 15px
+			폰트두께 : bold
+			*/
+			font-family:바탕체, sans-serif;
+			font-size:15px;
+			font-weight:bold;
+			color:rgba(0,255,0,0.7);
+		}
+
+
+	</style>
+	<script></script>
+</head>
+<body>
+	<!-- -->
+	<h1>텍스트(글자)관련 스타일을 알아봅시다.</h1>
+	<h2 class="myfnt1">Web Font Example</h2>
+	<h2 class="myfnt2">이것도 웹폰트(Web Font) 예제</h2>
+
+
+	<div style="text-decoration:none;">기본(none)</div>
+	<div style="text-decoration:underline;">밑줄(underline)</div>
+	<div style="text-decoration:overline;">윗줄(overline)</div>
+	<div style="text-decoration:line-through;">취소선(line-through)</div>
+
+	<hr color="red">
+	<table border="1" width="90%" height="400px" align="center">
+	<tr>
+	<!-- 
+		수직정렬 : vertical-align속성
+					=> 값[top, middle, bottom, baseline,sup,sub]
+
+		수평정렬 : text-align속성
+					=> 값[left, center, right, justify(좌우정렬)]
+		텍스트들여쓰기 : text-indent
+					=> 값[양수(들여쓰기), 음수(내여쓰기)]
+	-->
+		<td width="50%" style="vertical-align:bottom;text-indent:10pt;">수직정렬</td>
+		<td width="50%" style="text-align:justyfy;text-indent:10pt;">수평정렬</td>
+	</tr>
+	<tr>
+		<td>
+		<!--
+			text-transform속성
+			=> 값[capitalize, uppercase, lowercase ]
+
+		-->
+			<span style="text-transform:capitalize">abc(첫글자를 대문자로)</span><br>
+			<span style="text-transform:uppercase">abc(모두 대문자로)</span><br>
+			<span style="text-transform:lowercase">abcDEF(모두 소문자로)</span><br>
+		</td>
+		<td>
+		<!-- 
+			letter-spacing	: 값 : 글자 간격
+			word-spacing	: 값 : 단어 간격
+		-->
+			<span style="">일반 문자 간격</span><br>
+			<span style="letter-spacing: 7px;">문자 간격(7px)</span><br>
+			<span style="word-spacing: 20px;">단어 간격(20px)</span><br>
+		</td>
+	</tr>
+	</table>
+	<!-- text-shadow 속성 :4px 2px 7px red; 
+							x축 y축 번짐크기 그림자속성
+	-->
+	<h1 style="text-shadow:4px 2px 7px blue;">텍스트 그림자주기 1</h1>
+	<h1 class="txtfnt">텍스트 그림자주기 2</h1>
+	<h1 id="fnt">텍스트 그림자주기 3</h1>
+
+</body>
+</html>

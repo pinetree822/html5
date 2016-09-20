@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>24외곽선스타일.html</title>
+	<style type="text/css">
+		/*
+			border스타일
+
+			[1] border : 상하좌우 모두 적용
+			[2] border-color : 외곽선 색상
+			[3] border-style : 외곽선 스타일
+				dashed,dotted(점선), solid(실선)
+				double(이중선), inset(오목선), outset(블록선)
+				groove(오목선), ridge(볼록선)
+
+			[4] border-width : 외곽선 굵기
+			[5] border-radius : 모서리 반지름
+		*/
+		div {
+			width:100px;
+			height:100px;
+			font-size:18pt;
+		}
+		div#my1 {
+			border: 30px dashed blue;
+		}
+		div#my2 {
+			margin-top:30px;
+			border-top: 2px outset red;
+			border-left:5px solid green;
+			border-bottom:10px groove orange;
+			border-right:10px inset maroon;
+		}
+		div#my3 {
+			border-style: solid;
+			border-width: 4px;
+			border-color: gold;
+		}
+		div#my4 {
+			margin-top:30px;
+			border:3px groove #006699;
+			border-radius: 5px 10px 3px 20px;
+			/*
+			border-radius: 10px;
+			border-width: 1px;
+			*/
+		}
+	</style>
+	<script></script>
+</head>
+<body>
+	<h1>외곽선 - border관련</h1>
+	<div id="my1">div영역1</div>
+	<div id="my2">div영역2</div>
+	<div id="my3">div영역3</div>
+	<div id="my4">div영역4</div>
+</body>
+</html>

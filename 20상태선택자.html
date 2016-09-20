@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>20상태선택자.html</title>
+	<style type="text/css">
+	/*상태 선택자
+		콜론(:)뒤에 엘리먼트를 선택할 수 있는
+		특별한 상태를 명세한다.
+
+		가상클래스(pseudo class) 선택자라고도 함
+	*/
+	* {
+		font-size : 17pt;
+		padding : 5px;
+	}
+	span > a {
+		text-decoration : none;
+	}
+	span > a:hover { /* 마우스오버시 글자 색깔*/
+		color:red;
+		font-size : 18pt;
+	}
+	span > a:active {/* 마우스클릭한 태그*/
+		color:yellow;
+	}
+	span > a:link {/* 방문전 */
+		color:sky;
+	}
+	span > a:visited {/* 방문후 */
+		color:grey;
+	}
+	</style>
+</head>
+<body>
+	<h1>상태 선택자(state selector)</h1>
+	<span class="cls">
+		<a href="09form양식1.html">링크1</a>
+	</span>
+	<span class="cls">
+		<a href="09form양식1.html">링크2</a>
+	</span>
+	<span class="cls">
+		<a href="09form양식1.html">링크3</a>
+	</span>
+
+	<div>
+		<a href="#">링크버튼1</a>
+		<a>링크버튼2</a>
+		<a href="http://www.daum.net">링크버튼3</a>
+		<a>링크버튼2</a>
+	</div>
+</body>
+</html>

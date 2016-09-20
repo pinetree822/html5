@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>25목록스타일.html</title>
+	<style type="text/css">
+		#menu li{
+			list-style-type:none;
+			width:100px;
+			height:23px;
+			background-color:#123234;
+			text-align:center;
+			vertical-align:middle;
+			padding:10px;
+			margin:5px;
+			float:left;
+			color:white;
+			font-family:verdana;
+			
+		}
+		#menu li:hover {
+			background-color:silver;
+			cursor : pointer;
+		}
+	</style>
+	<script></script>
+</head>
+<body>
+	<!-- 
+		<ul style="list-style-type:upper""> 
+		값 => none, disc, circle, sqaure, upper-alpha,  lower-alpha,
+		upper-roaman, lower-roman
+	-->
+	<ul style="list-style-type:upper-alpha"">
+		<li>HTML5</li>
+		<li>CSS3.0</li>
+		<li>JSP2.2</li>
+	</ul>
+	<ul type="square">
+		<li>HTML5</li>
+		<li>CSS3.0</li>
+		<li>JSP2.2</li>
+	</ul>
+	<ul style="list-style-image:url(images/c.PNG)">
+		<li>HTML5</li>
+		<li>CSS3.0</li>
+		<li>JSP2.2</li>
+	</ul>
+	<ul id="menu" type="square">
+		<li>HTML5</li>
+		<li>CSS3.0</li>
+		<li>JSP2.2</li>
+	</ul>
+
+</body>
+</html>

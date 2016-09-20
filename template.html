@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>템플릿 페이지 : 웹 사이트 레이아웃 샘플페이지 제작</title>
+	<style>
+	<!--
+	 /* 클래스 지정 
+		#id		id=""
+		.class	class=""
+	 */
+	table, th, td {
+		border: 1px solid #cccccc;
+		/* padding: 10px 10px 10px 10px; */
+		padding: 0px 0px 0px 0px;
+		border-spacing:0px 0px;
+		border-collapse:collapse;
+
+		font-family: "맑은 고딕", Times, serif;
+		font-size:10pt;
+	}
+	/*
+	#t1>tr {
+			border: 0px solid #cccccc;
+			border-top: solid red;
+			border-right: 0px solid red;
+			border-bottom: solid red;
+			border-left: 0px solid red;
+			border-image: none;
+	}
+	*/
+	-->
+	</style>
+</head>
+<body>
+	<table border="red" width="100%" style="font:arial;">
+	<tr align="center"><!-- Header(상단) -->
+		<td colspan="4">Header(상단)</td>
+	</tr>
+	<tr align="center"><!-- Navigation(네비게이션) -->
+		<td colspan="4">Navigation(네비게이션)</td>
+	</tr>
+	<tr bgcolor="#2BA4EF"><!-- Space blank -->
+		<td colspan="4">&nbsp;</td>
+	</tr>
+	<tr align="center"><!-- Search(검색), 로그인 / 로그아웃 정보 -->
+		<td colspan="4">Search(검색), 로그인 / 로그아웃 정보</td>
+	</tr>
+	<tr class="t1" align="left" bgcolor="#056ACF" style="color:#ffffff"><!-- 메인 배너 들어올 자리 공지사항 자리 -->
+		<td></td>
+		<td>메인 배너 들어올 자리</td>
+		<td></td>
+		<td>공지사항 들어올 자리</td>
+	</tr>
+	<tr align="center"><!-- 이벤트 페이지 / 전체 페이지 -->
+		<td colspan="4">이벤트 페이지 / 전체 페이지</td>
+	</tr>
+	<tr align="center"><!-- 카테고리 / Tree, View 메인, 컨텐츠 -->
+		<td>카테고리 / Tree View</td>
+		<td colspan="3">메인, 컨텐츠</td>
+	</tr>
+	
+	<tr align="center"><!-- 카테고리 / Tree View, Home > Main : 사이트 맵 패스 들어올 자리 -->
+		<td rowspan="2">카테고리 / Tree View</td>
+		<td colspan="3" align="left">Home > Main : 사이트 맵 패스 들어올 자리</td>
+	</tr>
+	<tr align="center">
+		<td colspan="3">메인, 컨텐츠</td>
+	</tr>
+
+
+
+	<tr align="center"><!-- 주요 마크 리스트 -->
+		<td colspan="4">주요 마크 리스트</td>
+	</tr>
+	<tr align="center"><!-- 표준약관 / 개인정보보호정책 / 회사소개 / 이용안내 / 사이트맵 -->
+		<td colspan="4">표준약관 / 개인정보보호정책 / 회사소개 / 이용안내 / 사이트맵</td>
+	</tr>
+	<tr align="center"><!-- Footer / Copyright -->
+		<td colspan="4">Footer / Copyright</td>
+	</tr>
+
+	</table>
+</body>
+</html>
